@@ -59,14 +59,14 @@ flowchart LR
 | **Response Delivery** | Copilot Chat Integration | Real-time summary display within conversation |
 
 
-<img src="./CoPilotStudio-Agent.png" alt="App Screenshot" width="250" height="300"> <img src="./CoPilotStudio-Flow.png" alt="App Screenshot" width="250" height="300"> <img src="./CoPilotStudio.png" alt="App Screenshot" width="250" height="300">
+<img src="./CoPilotStudio-Agent.png" alt="App Screenshot" width="275" height="325"> <img src="./CoPilotStudio-Flow.png" alt="App Screenshot" width="275" height="325"> <img src="./CoPilotStudio.png" alt="App Screenshot" width="275" height="325">
 ---
 
 ## 🏗️ Implementation Details
 
 ### 1. Intelligent Data Retrieval
 
-I engineered a high-performance FetchXML query that consolidates multiple activity types into a single, optimized request:
+A high-performance FetchXML query that consolidates multiple activity types into a single, optimized request:
 
 ```xml
 <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false" no-lock="true" top="4">
@@ -116,11 +116,10 @@ I engineered a high-performance FetchXML query that consolidates multiple activi
 - **Efficiency**: Single query spans multiple activity types via `activitypointer`
 - **Recency**: `modifiedon` ordering captures most current business context
 
-*[Screenshot Placeholder: Query Performance Metrics Dashboard]*
 
 ### 2. Advanced Prompt Engineering
 
-I designed a two-tier prompt structure that maximizes AI comprehension and output consistency:
+Designed a two-tier prompt structure that maximizes AI comprehension and output consistency:
 
 **Tier 1: Dynamic Data Formatting**
 ```javascript
@@ -168,16 +167,15 @@ Provide the summary in the following format:
 • [1-2 business-critical insights]
 ```
 
-*[Screenshot Placeholder: Sample AI-Generated Summary Output]*
 
 ### 3. AI Integration Architecture
 
 **AI Builder Configuration:**
 ```json
 {
-  "model": "AI Builder Text Summarizer",
+  "model": "AI Summarize",
   "input": {
-    "requestv2/inputText": "@outputs('Compose')"
+    "item/requestv2/inputText": "@outputs('Compose')",
   },
   "output": {
     "airesponse": "@{outputs('Predict')?['body/responsev2/predictionOutput/text']}"
@@ -190,92 +188,17 @@ Provide the summary in the following format:
 - Response time: Sub-3 second processing
 - Success rate: 99.7% completion with graceful error handling
 
-*[Screenshot Placeholder: AI Builder Performance Analytics]*
-
 ---
 
-## 🔄 Complete Process Flow
 
-```mermaid
-flowchart TD
-    subgraph "User Interface Layer"
-        A[Sales Agent in Dynamics 365] --> B[Microsoft Copilot Integration]
-        B --> C[Custom Plugin Trigger]
-    end
-
-    subgraph "Data Processing Layer"
-        C --> D[Power Automate Flow]
-        D --> E[FetchXML Query Execution]
-        E --> F[Dataverse Activity Retrieval]
-        F --> G[Dynamic Prompt Composition]
-    end
-
-    subgraph "AI Processing Layer"
-        G --> H[AI Builder Text Model]
-        H --> I[Structured Summary Generation]
-        I --> J[Response Formatting]
-    end
-
-    subgraph "Output Integration Layer"
-        J --> K[Copilot Interface Display]
-        J --> L[CRM Timeline Integration]
-        J --> M[Optional Task/Alert Generation]
-    end
-
-    classDef userLayer fill:#e1f5fe,stroke:#0277bd,stroke-width:2px
-    classDef dataLayer fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef aiLayer fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    classDef outputLayer fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-
-    class A,B,C userLayer
-    class D,E,F,G dataLayer
-    class H,I,J aiLayer
-    class K,L,M outputLayer
-```
-
-*[Screenshot Placeholder: End-to-End Flow Demonstration]*
-
-```mermaid
-flowchart LR
-    A[👤 Agent<br/>Copilot Chat] --> B[🔄 Power<br/>Automate]
-    B --> C[📊 Dataverse<br/>Query]
-    C --> D[🤖 AI Builder<br/>Summarize]
-    D --> E[💬 Copilot<br/>Response]
-    
-    classDef user fill:#2196F3,color:#fff,stroke:#1976D2,stroke-width:2px
-    classDef process fill:#9C27B0,color:#fff,stroke:#7B1FA2,stroke-width:2px
-    classDef data fill:#4CAF50,color:#fff,stroke:#388E3C,stroke-width:2px
-    classDef ai fill:#FF9800,color:#fff,stroke:#F57C00,stroke-width:2px
-    classDef output fill:#2196F3,color:#fff,stroke:#1976D2,stroke-width:2px
-    
-    class A user
-    class B process
-    class C data
-    class D ai
-    class E output
-
-```
----
 
 ## 💼 Business Benefits
-
-### For C-Level Executives
-
-**Strategic Advantages:**
-- **Revenue Impact**: 23% improvement in sales conversion through better customer context
-- **Operational Efficiency**: 40% reduction in customer interaction preparation time
-- **Risk Mitigation**: Proactive identification of at-risk accounts through sentiment analysis
-- **Scalability**: Zero marginal cost per additional user or interaction
 
 **Competitive Differentiation:**
 - Native Microsoft ecosystem integration (no third-party dependencies)
 - Zero-training AI model (immediate deployment capability)
 - Extensible architecture for future AI capabilities
 - Enterprise-grade security and compliance alignment
-
-*[Screenshot Placeholder: ROI Calculator Dashboard]*
-
-### For Technical Leadership
 
 **Implementation Benefits:**
 - **Zero Code Deployment**: Metadata-only configuration approach
