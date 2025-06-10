@@ -58,8 +58,7 @@ flowchart LR
 | **AI Processing** | AI Builder GPT-4o Mini Model | Pre-trained text summarization with structured output |
 | **Response Delivery** | Copilot Chat Integration | Real-time summary display within conversation |
 
-*[Screenshot Placeholder: Architecture Diagram with Flow Components]*
-
+![Screenshot](CoPilotStudio.png)
 ---
 
 ## 🏗️ Implementation Details
