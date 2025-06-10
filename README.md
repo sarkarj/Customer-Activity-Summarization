@@ -59,9 +59,7 @@ flowchart LR
 | **Response Delivery** | Copilot Chat Integration | Real-time summary display within conversation |
 
 
-<img src="./CoPilotStudio-Agent.png" alt="App Screenshot" width="400"> 
-<img src="./CoPilotStudio-Flow.png" alt="App Screenshot" width="400"> 
-
+<img src="./CoPilotStudio-Agent.png" alt="App Screenshot" width="300"> <img src="./CoPilotStudio-Flow.png" alt="App Screenshot" width="300"> <img src="./CoPilotStudio.png" alt="App Screenshot" width="300"> 
 ---
 
 ## 🏗️ Implementation Details
