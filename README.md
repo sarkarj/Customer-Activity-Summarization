@@ -22,10 +22,10 @@ Transform scattered customer interactions into actionable intelligence. The AI-d
 
 ```mermaid
 flowchart LR
-    A[👤 Copilot<br/> Chat] --> B[⚙️ Copilot<br/>Agent]
-    B --> C[📊 Dataverse<br/>Query]
-    C --> D[🧠 AI <br/>Summarize]
-    D --> E[💬 Copilot<br/>Response]
+    A[ 👤 Copilot<br/> Chat] --> B[ ⚙️ Copilot<br/>Agent]
+    B --> C[ 📊 Dataverse<br/>Query]
+    C --> D[ 🧠 AI <br/>Summarize]
+    D --> E[ 💬 Copilot<br/>Response]
     
     classDef user fill:#EEEEEE,color:#000000,stroke:#BDBDBD,stroke-width:2px
     classDef process fill:#EEEEEE,color:#000000,stroke:#BDBDBD,stroke-width:2px
