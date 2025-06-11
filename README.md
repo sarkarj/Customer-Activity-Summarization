@@ -1,6 +1,6 @@
 # 📊 AI-Powered Customer Activity Summarization for Dynamics 365
 
-[![AI](https://img.shields.io/badge/AI-Enhanced-green.svg)]() [![Microsoft](https://img.shields.io/badge/Microsoft-Dynamics%20365-blue.svg)]() [![Microsoft](https://img.shields.io/badge/Microsoft-Copilot-blue.svg)](https://www.microsoft.com/en-us/microsoft-copilot) [![Microsoft](https://img.shields.io/badge/Microsoft-Copilot%20Studio-blue.svg)](https://copilotstudio.microsoft.com/) [![Enterprise](https://img.shields.io/badge/Enterprise-Ready-red.svg)]() [![No Code](https://img.shields.io/badge/No%20Code-Solution-purple.svg)]()
+[![AI](https://img.shields.io/badge/AI-Enhanced-green.svg)]() [![Microsoft](https://img.shields.io/badge/Microsoft-Dynamics%20365-blue.svg)]() [![Microsoft](https://img.shields.io/badge/Microsoft-Copilot-blue.svg)](https://www.microsoft.com/en-us/microsoft-copilot) [![Microsoft](https://img.shields.io/badge/Microsoft-Copilot%20Studio-blue.svg)](https://copilotstudio.microsoft.com/) [![AI](https://img.shields.io/badge/AI-Model-green.svg)](https://openai.com/gpt-4o-mini) [![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o--mini-blue.svg)](https://openai.com/gpt-4o-mini) [![Enterprise](https://img.shields.io/badge/Enterprise-Ready-red.svg)]() [![No Code](https://img.shields.io/badge/No%20Code-Solution-purple.svg)]()
 
 ---
 ## 🚀 Overview
